@@ -75,7 +75,8 @@ if(!title || !description) return response.status(400).json({message: "title and
 }
 tasks.push(newTask)
 writeTasks(tasks)
-response.status(201).json(tasks)
+
+return response.status(201).json(tasks)
 }
 
 
